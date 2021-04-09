@@ -1,13 +1,15 @@
 <html>
   <!--  
-    1. Click the 3th word of the 3rd paragraph.
+    1. Click the 5th last word.
     2. Click the 4th last word of the 3rd sentence.
-    3. Click the 6th last word in the whole message.
+    3. Click the last word of 5th last sentence.
+    4. Click the 2nd word.
   --> 
   <head>
     <script>
       var firstStepDone = false
       var secondStepDone = false
+      var thirdStepDone = false
       window.onload = function () {
         document.getElementById("firstStep").addEventListener("click", (event) => {
           firstStepDone = true
@@ -15,34 +17,33 @@
         document.getElementById("secondStep").addEventListener("click", (event) => {
           if (firstStepDone) {
             secondStepDone = true
-          } else {
-            firstStepDone = false
-            secondStepDone = false
           }
         })
         document.getElementById("thirdStep").addEventListener("click", (event) => {
-          if (firstStepDone && secoondStepDone) {
-            window.location = "https://fizzy123.github.io/static-pages/part3-1.html"
-          } else {
-            firstStepDone = false
-            secondStepDone = false
+          if (firstStepDone && secondStepDone) {
+            thirdStepDone = true
+          }
+        })
+        document.getElementById("fourthStep").addEventListener("click", (event) => {
+          if (firstStepDone && secondStepDone && thirdStepDone) {
+            window.location = "https://puzzles.nobr.me/part3-1.html"
           }
         })
       }
     </script>
   </head>
   <body style="background-color: black;color: white;font-family: Arial;">
-    <div style="width:800px">
+    <div style="width:800px;margin: auto;padding-top: 30px;">
       <div>
-      I guess I do recognize that I’m being kind of unfair. The reality is probably that tons of people would love to be this more empathetic or more understanding versions of themselves, but they just can’t, whether it’s because of past traumas, or because of the constant exhaustion induced by capitalism, or simply because they’ve never learned how.
+        On <span id="fourthStep">second thought</span>, I guess I do recognize that I’m being kind of unfair. The reality is probably that tons of people would love to be this more empathetic or more understanding versions of themselves, but they just can’t, whether it’s because of past traumas, or because of the constant exhaustion induced by capitalism, or simply because they’ve never learned how.
       </div>
       <br>
       <div>
-      I think shame and insecurities play a lot into this. When you’re constantly battling your insecurities, even a mild insinuation that you have a better understanding (which I think is just... true of everyone in the world) can feel like a personal attack. Someone might just be trying to understand you, but it can feel like they’re coming after you. Maybe previous relationships taught you that mutual understanding leads to manipulation. Maybe previous relationships taught you that vulnerability leads to shaming and criticism. These are unfortunately realities that people continue to live out, even after they’ve left whatever bad situation they were in before.
+        I think shame and insecurities play <span id="secondStep">a</span> lot into this. When you’re constantly battling your insecurities, even a mild insinuation that you could have a better understanding (which I think is just... true of everyone in the world) can feel like a personal attack. Someone might just be trying to understand you, but it can feel like they’re coming after you. Maybe previous relationships taught you that mutual understanding leads to manipulation. Maybe previous relationships taught you that vulnerability leads to shaming and criticism. These are unfortunately realities that people continue to live out, even after they’ve left whatever bad situation they were in before.
       </div>
       <br>
       <div>
-      It’s also possible that people simply don’t know how to gain better understanding and empathy. American culture didn’t ingrain a lot of us with an innate understanding of healthy and effective communication. Hell, plenty of american boys make it as far as college and beyond without learning any way of communicating affection besides insulting one another. To a significant degree, the media only enforces this. Reality TV and dramas show a million ways to escalate things until they become explosive and almost no ways of resolving things with calm, peaceful understanding.
+      It’s also possible that people simply don’t know how to gain better understanding and empathy. American culture didn’t ingrain a lot of us with an innate understanding of healthy and effective communication. Hell, plenty of american men make it as far as college and beyond without learning any way of communicating affection besides insulting one another. To a significant degree, the media only enforces this. Reality TV and dramas show a million ways to escalate things until they become explosive and almost no ways of resolving things with calm, peaceful understanding.
       </div>
       <br>
       <div>
@@ -50,11 +51,11 @@
       </div>
       <br>
       <div>
-      However, i get that, even if you know these things, you might still not be able to get past this wall. You might not have the energy for it, or you might have a mental blocker stopping you from seeking proactive communication. We all have busy lives and we all have our own things that we’re concerned about.
+        Unfortunately, you still need to be the one that takes the First <span id="thirdStep">step</span>. I get that, even if you know these things, you might still not be able to get past this wall. You might not have the energy for it, or you might have a mental blocker stopping you from seeking proactive communication. We all have busy lives and we all have our own things that we’re concerned about.
       </div>
       <br>
       <div>
-      Maybe, given the state of the world, this is just the best that we can do?
+        Maybe, given the state of the world, it's just unreasonale to expect better? Maybe we should just <span id="firstStep">take</span> what we can get?
       </div>
     </div>
   </body>
