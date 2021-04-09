@@ -1,15 +1,13 @@
 <html>
   <!--  
     1. Click the 5th last word.
-    2. Click the 4th last word of the 3rd sentence.
-    3. Click the last word of 5th last sentence.
-    4. Click the 2nd word.
+    2. Click the last word of 5th last sentence.
+    3. Click the 2nd word.
   --> 
   <head>
     <script>
       var firstStepDone = false
       var secondStepDone = false
-      var thirdStepDone = false
       window.onload = function () {
         document.getElementById("firstStep").addEventListener("click", (event) => {
           firstStepDone = true
@@ -21,11 +19,6 @@
         })
         document.getElementById("thirdStep").addEventListener("click", (event) => {
           if (firstStepDone && secondStepDone) {
-            thirdStepDone = true
-          }
-        })
-        document.getElementById("fourthStep").addEventListener("click", (event) => {
-          if (firstStepDone && secondStepDone && thirdStepDone) {
             window.location = "https://puzzles.nobr.me/part3-1.html"
           }
         })
@@ -35,7 +28,7 @@
   <body style="background-color: black;color: white;font-family: Arial;">
     <div style="width:800px;margin: auto;padding-top: 30px;">
       <div>
-        On <span id="fourthStep">second thought</span>, I guess I do recognize that I’m being kind of unfair. The reality is probably that tons of people would love to be this more empathetic or more understanding versions of themselves, but they just can’t, whether it’s because of past traumas, or because of the constant exhaustion induced by capitalism, or simply because they’ve never learned how.
+        On <span id="thirdStep">second</span> thought, I guess I do recognize that I’m being kind of unfair. The reality is probably that tons of people would love to be this more empathetic or more understanding versions of themselves, but they just can’t, whether it’s because of past traumas, or because of the constant exhaustion induced by capitalism, or simply because they’ve never learned how.
       </div>
       <br>
       <div>
@@ -51,7 +44,7 @@
       </div>
       <br>
       <div>
-        Unfortunately, you still need to be the one that takes the First <span id="thirdStep">step</span>. I get that, even if you know these things, you might still not be able to get past this wall. You might not have the energy for it, or you might have a mental blocker stopping you from seeking proactive communication. We all have busy lives and we all have our own things that we’re concerned about.
+        Unfortunately, you still need to be the one that takes the First step. I get that, even if you know these things, you might still not be able to get past this wall. You might not have the energy for it, or you might have a mental blocker stopping you from seeking proactive communication. We all have busy lives and we all have our own things that we’re concerned about.
       </div>
       <br>
       <div>
